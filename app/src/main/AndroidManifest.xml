@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.c196Assessment.studentscheduler">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/night_tree"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StudentScheduler">
+
+
+        <receiver
+            android:name=".Utilities.MyReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".UI.AssessmentDetails"
+            android:exported="false"
+            android:label="Assessment Details" />
+        <activity
+            android:name=".UI.AssessmentListAndCourseDetails"
+            android:exported="false"
+            android:label="Course Details" />
+        <activity
+            android:name=".UI.CourseListAndTermDetails"
+            android:exported="false"
+            android:label="Term Details" />
+        <activity
+            android:name=".UI.TermList"
+            android:exported="false"
+            android:label="Terms" />
+        <activity
+            android:name=".UI.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
